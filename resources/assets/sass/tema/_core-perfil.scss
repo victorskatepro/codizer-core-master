@@ -1,0 +1,410 @@
+/**
+Contenido del menu lateral
+**/
+
+
+#main-header-info-app-perfil {
+  width: 100%;
+  height: 214px;
+  background-color: $blanco;
+  box-shadow: $sombra-gris-object;
+  margin-bottom: 10px;
+  @include transition(.3s ease);
+
+  p {
+    text-align: center;
+  }
+
+
+  #contact-photo-perfil {
+    padding: 14px;
+    padding-top: 18px;
+    width: 100%;
+    height: 155px;
+
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 100px;
+      border: solid 6px $gris-100;
+      margin-left: 5px;
+      margin-right: 20px;
+    }
+  }
+}
+
+
+// Icons share
+#chat-icon-perfil, #more-icon-perfil {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border-width: 0;
+  @include transition(.3s ease);
+
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+#chat-icon-perfil {
+  padding-top: 7px;
+  background: $green-chat;
+  box-shadow: $shadown-green-min;
+  padding-left: 7px;
+  color: $blanco;
+  margin-bottom: 20px;
+}
+
+#more-icon-perfil {
+  padding-top: 8px;
+  background: $blanco;
+  box-shadow: $shadown-gray-min;
+  padding-left: 10px;
+  color: $gris-label;
+}
+
+
+
+#info-contact-perfil {
+  margin-top: 2px;
+  width: 100%;
+  a {
+    text-decoration: none;
+    div {
+      padding-left: 15px;
+      width: 100%;
+      height: 36px;
+      font-weight: 300;
+      font-size: 12px;
+      color: $black-core;
+      @include transition(.3s ease);
+
+      &:hover {
+        color: $azul-100;
+      }
+    }
+
+    #name-perfil {
+      height: 22px;
+      font-size: 15px;
+      font-weight: 400;
+      color: $azul-100;
+    }
+  }
+}
+
+#proffessio-perfil {
+  width: 100%;
+  background-color: $gris-50;
+  padding-top: 6px;
+}
+
+
+
+#container-video {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 800px;
+  height: auto;
+  z-index: 10;
+  video {
+    text-align: center;
+    width: 800px;
+    height: auto;
+  }
+}
+
+#container-img-perfils {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 800px;
+  height: auto;
+  z-index: 10;
+  img {
+    text-align: center;
+    width: 800px;
+    height: auto;
+  }
+}
+
+#article-content {
+}
+
+
+/**
+ Menu posts
+**/
+
+.active {
+  background-color: $blanco !important;
+  color: $azul-100 !important;
+  border: solid 0px $blanco !important;
+}
+
+#menu-posts-perfil-container {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 800px;
+  height: auto;
+  margin-top: -20px;
+
+  #options-menu-post-container, #options-menu-seguir, #options-menu-amigo {
+    text-align: center;
+    float: left;
+    border-radius: 42px;
+    background-color: $blanco;
+    position: relative;
+    z-index: 10;
+    box-shadow: $sombra-max;
+    padding-top: 2px;
+
+    a, button {
+      color: $black-core;
+      @include transition(.3s ease);
+      font-size: 13px;
+
+      &:hover {
+        color: $azul-100;
+      }
+    }
+
+  }
+
+  #options-menu-post-container {
+    width: 520px;
+    height: 36px;
+    margin-left: 15px;
+  }
+
+  #options-menu-seguir, #options-menu-amigo {
+    width: 108px;
+    height: 36px;
+    margin-left: 15px;
+
+    button {
+      background-color: $blanco;
+    }
+  }
+}
+
+/**
+  Form Create post container button
+**/
+#box-create-post {
+  width: 100%;
+  height: 40px;
+  margin-top: 2px;
+  background-color: $gris-100;
+  border-radius: 6px;
+
+  select {
+    width: auto !important;
+    color: $azul-100;
+    height: 28px !important;
+    background-color: $blanco !important;
+    border-bottom: solid 0 $gris-100 !important;
+    border-radius: 6px !important;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 5px;
+
+    &:focus {
+      border-bottom: solid 0px $gris-100 !important;
+    }
+  }
+
+  button {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: right;
+    font-size: 12px;
+    height: 28px;
+    border-radius: 28px;
+    border: solid 0px transparent;
+    color: $blanco;
+    background-color: $azul-100;
+
+  }
+}
+
+/**
+  POSTS
+**/
+#posts-perfil {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 800px;
+  min-height: 200px;
+  margin-top: 10px;
+
+  // Contenido posts
+  #content-post-perfil-and-form {
+    float: left;
+    width: 550px;
+    min-height: 20px;
+    background-color: $blanco;
+    padding: 10px;
+
+    #form-posts-add {
+
+      textarea {
+        width: 100% !important;
+      }
+
+    }
+  }
+
+  // Contenido Tags
+  #content-candidate-and-tags {
+    float: right;
+    width: 240px;
+    min-height: 20px;
+    background-color: $blanco;
+    padding: 10px;
+  }
+
+}
+
+
+
+
+
+
+// FORMULARIO PARA SUBIR UN NUEVO COVER DE PERFIL
+
+#view-subiendo-cover {
+  @include centrarXY();
+  @include transition(.3s ease);
+  display: none;
+
+  div {
+    width: 90px;
+    height: 90px;
+    background-color: rgba($blanco, 0.95);
+    padding: 5px;
+    border-radius: 90px;
+  }
+}
+
+#form-cover-perfil-store {
+  @include centrarXY();
+  @include transition(.3s ease);
+  opacity: 0;
+
+  .upload-cover {
+    width: 90px;
+    height: 90px;
+    background: url('../media/icon/upload-icon.png');
+    background-size: 90px;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  input#btn-file-cover-store {
+    @include transition(.3s ease);
+    display: block !important;
+    width: 90px !important;
+    height: 90px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#container-img-perfils {
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    #form-cover-perfil-store {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+// FOTO PERFIL
+// PARA SUBIR UNA NUEVA FOTO DE USUARIO
+
+
+#container-foto-perfil-user {
+  width: 120px;
+  height: auto;
+  z-index: 10;
+  margin-right: 16px;
+  display: inline-block;
+}
+
+
+#view-subiendo-foto {
+  position: absolute;
+  left: 35%;
+  top: 47%;
+  @include prefixer(transform, translate(-50%, -50%));
+  @include transition(.3s ease);
+  display: none;
+
+  div {
+    width: 90px;
+    height: 90px;
+    background-color: rgba($blanco, 0.95);
+    padding: 5px;
+    border-radius: 90px;
+  }
+}
+
+#form-foto-perfil-store {
+  // @include centrarXY();
+  position: absolute;
+  left: 35%;
+  top: 47%;
+  @include prefixer(transform, translate(-50%, -50%));
+  @include transition(.3s ease);
+  opacity: 0;
+
+  .upload-foto {
+    width: 90px;
+    height: 90px;
+    background: url('../media/icon/upload-icon.png');
+    background-size: 90px;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  input#btn-file-foto-store {
+    @include transition(.3s ease);
+    display: block !important;
+    width: 90px !important;
+    height: 90px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#contact-photo-perfil {
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    #form-foto-perfil-store {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+

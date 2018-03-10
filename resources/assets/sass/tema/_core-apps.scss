@@ -1,0 +1,75 @@
+.core-apps-background-a {
+  background-color: $blanco;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 40px;
+  width: 100%;
+  @include prefixer(height, calc(100% - 40px));
+  overflow: auto;
+}
+
+.core-apps-container {
+  display: none;
+  max-width: 860px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// Format apps
+.app-option {
+  text-align: center;
+  display: inline-block;
+  width: 130px;
+  height: 186px;
+  margin: 10px 40px;
+  @include transition(.3s ease);
+
+  .app-icon {
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 115px;
+    border: solid 1px $gris-300;
+    margin-bottom: 20px;
+    @include transition(.3s ease);
+
+    img {
+      margin-top: 20px;
+      width: 70px;
+      height: 70px;
+      @include  transition(.3s ease);
+    }
+  }
+
+  // NOMBRE DE LA APP
+  span {
+    margin-top: 20px;
+    text-align: center;
+    color: $black-core;
+    text-decoration: none;
+    @include transition(.3s ease);
+  }
+
+  &:hover {
+    .app-icon {
+      border: solid 1px transparent;
+      @include prefixer(transform, scale(.9, .9));
+
+      img {
+        @include prefixer(transform, scale(1.8, 1.8));
+      }
+    }
+
+    span {
+      color: $morado;
+    }
+  }
+}

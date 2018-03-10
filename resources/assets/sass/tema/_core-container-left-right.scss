@@ -1,0 +1,222 @@
+// SEARCH GROUP
+#core-search-group {
+  input {
+    width: 280px !important;
+    height: 28px !important;
+    border: none !important;
+    background-color: #666666 !important;
+    color: #E6E6E6 !important;
+    border-radius: 20px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+
+  }
+}
+
+#core-search-group-btn {
+  background-color: #4A4A4A;
+  border-radius: 20px !important;
+  transform: translateX(-26px);
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+
+  &:hover {
+    background-color: $gris-250;
+  }
+}
+
+
+// CONTAINERS
+#article-content {
+  float: left;
+  height: auto;
+  @include transition(.3s ease);
+}
+
+.left-content-list {
+  overflow: auto;
+  height: 600px;
+  @include transition(.3s ease);
+}
+
+.right-content-list {
+  overflow: auto;
+  height: 600px;
+  @include transition(.3s ease);
+}
+
+
+.left-content-list, .left-content-list-tool {
+  background-color: $blanco;
+  width: 300px;
+  border-right: solid 1px $gris-150;
+  float: left;
+}
+
+.right-content-list, .right-content-list-tool {
+  background-color: $gris-100;
+  @include prefixer(width, calc(100% - 300px));
+  float: left;
+}
+
+ .options-tools-list {
+   width: 100%;
+ }
+
+.options-tools-list, .left-content-list-tool, .right-content-list-tool {
+  height: 46px;
+  background-color: rgba($blanco, 0.9) !important;
+  border-bottom: solid 1px $gris-600 !important;
+}
+
+.left-content-list-tool, .right-content-list-tool {
+
+  // ESTILOS EXTRA DE PRUEBA
+  background-color: $black-core !important;
+  border-right: solid 1px $gris-500;
+  padding: 9px;
+
+  button {
+    @include transition(.3s ease);
+    border: none;
+    background-color: rgba($blanco, 0.1);
+    color: #E6E6E6;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.list-contacts-table {
+  div {
+    margin-top: -0px;
+  }
+
+  img {
+    margin-right: 10px;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// Container
+.block-content-info {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @include prefixer(width, calc(100% - 20px));
+  padding: 30px 15px;
+  // background-color: $blanco;
+  height: auto;
+  @include box-sizing(border-box);
+  // box-shadow: $sombra-gris-object;
+}
+
+#msg-vacio {
+  text-align: center;
+  width: 90%;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  @include prefixer(transform, translate(-50%, -50%));
+}
+
+#msg-list-vacio {
+  text-align: center;
+  width: 90%;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  top: 35%;
+  @include prefixer(transform, translate(-50%, 50%));
+}
+
+
+// FILA ACTIVA PARA LA LISTA
+.activarFila {
+  background-color: $gris-100 !important;
+  td {
+    a {
+      color: $azul-200 !important;
+    }
+  }
+}
+
+
+// CONTENEDORE DE ADIMINISTRACIÓN
+.container-list-info-admin {
+  position: relative;
+  top: 115px;
+  right: 10px;
+  width: 100%;
+  @include prefixer(height, calc(100% - 125px));
+  background-color: $blanco;
+}
+
+.container-list-info-admin-extra {
+  position: relative;
+  top: 90px;
+  right: 10px;
+  width: 100%;
+  @include prefixer(height, calc(100% - 90px));
+  background-color: $blanco;
+}
+
+.container-admin-30 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  background-color: $gris-50;
+  overflow: auto;
+  // border-right: solid 1px $gris-250;
+}
+
+
+.container-admin-100 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include prefixer(width, calc(100% + 10px));
+  height: 100%;
+  background-color: $gris-50;
+  overflow: auto;
+}
+
+.container-admin-100-tittle {
+  width: 100%;
+  height: 46px;
+  background-color: $blanco;
+
+  div {
+    display: inline-block;
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    border-right: solid 1px $gris-100;
+    border-bottom: solid 1px $gris-100;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-top: 3px;
+  }
+}
+
+.container-admin-100-33 {
+  position: relative;
+  width: 33%;
+  @include prefixer(height, calc(100% - 55px));
+  border-right: solid 1px $gris-150;
+  display: inline-block;
+  overflow: auto;
+}
+
+.tag-num {
+  font-weight: 600;
+  margin-right: 8px;
+  font-size: 18px;
+}
+

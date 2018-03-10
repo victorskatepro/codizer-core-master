@@ -1,0 +1,504 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  background-color: #F2F2F2;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+
+}
+
+// Quitar el focus de todos los elementos del DOM
+*, *:focus {
+  outline:0 !important;
+  @include box-sizing(border-box);
+}
+
+#container-ui {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 1024px;
+  height: auto;
+}
+
+.core-logo-global {
+  color: $black-core;
+  font-size: 16px;
+  margin-top: 13px !important;
+  margin-left: -4px !important;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.navbar, .navbar-default, #core-navbar-collapse {
+  margin-top: -12px;
+  min-height: 40px;
+  height: auto;
+  border-radius: 0;
+  border-bottom: solid 1px $gris-150;
+  background-color: $blanco;
+}
+
+/**
+  Primer Menú top derecho
+**/
+.tool-margin-right {
+  padding-top: 18px !important;
+  padding-bottom: 6px !important;
+  font-size: 14px;
+  border-left: solid 1px $gris-150;
+}
+
+.core-icons-tools {
+  padding-top: 22px !important;
+  padding-bottom: 8px !important;
+}
+
+.tool-margin-left-button {
+  margin-top: 15px;
+  margin-left: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+#img-user-admin {
+  width: 26px;
+  height: 26px;
+  border-radius: 26px;
+  margin-right: 5px;
+}
+
+/**
+  Icons tools
+**/
+#notify-core-perfil {
+  height: 23px;
+  width: auto;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $blanco;
+  margin-top: -3px;
+  background-color: $red-300;
+
+  @include prefixer(box-shadow, $shadown-red-min);
+  border-radius: 33px;
+
+  font-size: 12px;
+}
+
+.core-search-icon-perfil {
+  border-left: solid 0;
+  div {
+    height: 23px;
+    width: 23px;
+    background-color: $gris-100;
+    margin-top: -3px;
+    border-radius: 23px;
+    font-size: 16px;
+    text-align: center;
+    color: $black-core;
+  }
+}
+
+
+
+
+
+
+
+#main, #content-body-ui {
+  margin-top: 50px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  @include box-sizing(border-box);
+  position: fixed;
+  z-index: 100;
+  background-color: $blanco;
+  border-bottom: solid 1px $gris-150;
+
+  #options-core {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 1024px;
+    min-height: 40px;
+    height: 40px;
+
+    nav {
+      z-index: 110;
+    }
+  }
+
+  #options-tools {
+    width: 100%;
+    height: 42px;
+    background-color: rgba($blanco, 0.9);
+    border-bottom: solid 1px $gris-150;
+  }
+}
+
+#article-content {
+  margin: 0 auto;
+  padding: 0 auto;
+  // margin-top: 100px;
+  // padding: 10px;
+  width: 100%;
+}
+
+
+
+/*
+MODIFICACIONES PARA EL MENÚ E INFO DE LA APP
+*/
+#hide-show-main {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+#main-header {
+  margin-top: 10px;
+  width: 214px;
+  height: 40px;
+  @include box-sizing(border-box);
+  display: block;
+
+  #main-header-app {
+    width: 100%;
+    height: 100%;
+    background-color: $azul-100;
+    cursor: pointer;
+
+    div {
+      float: left;
+    }
+
+    #apps-icon {
+      color: $blanco;
+      font-size: 9px;
+      background-color: rgba($blanco, 0.12);
+      height: 26px;
+      width: 26px;
+      border-radius: 26px;
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 8px;
+    }
+
+    #apps-name {
+      padding-top: 4px;
+      #name-app-select {
+        display: block;
+        font-size: 13px;
+        color: $blanco;
+      }
+
+      #codizer-apps-select {
+        display: block;
+        font-size: 9px;
+        color: rgba($blanco, 0.53);
+      }
+
+    }
+
+    #apps-flecha {
+      width: 40px;
+      height: 40px;
+      background-color: rgba($blanco, 0.12);
+      float: right;
+      color: $blanco;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+  }
+
+  #main-header-info-app {
+    width: 100%;
+    height: 40px;
+    background-color: $blanco;
+    border-bottom: solid 1px $gris-150;
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+#main-header-options-app {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  background-color: $blanco;
+  padding: 10px 10px;
+}
+
+#main nav {
+  @include prefixer(box-shadow, $sombra-gris-object);
+  @include transition(.3s ease);
+}
+
+
+
+
+
+/**
+  Content menu left
+**/
+.core-menu-list {
+  text-decoration: none !important;
+  color: $black-core;
+  font-size: 13px;
+  div {
+    margin: 0 auto;
+    padding: 0 auto;
+    padding: 8px 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 190px;
+    height: 36px;
+    border-bottom: solid 1px $gris-150;
+
+    &:hover {
+      color: $azul-100;
+    }
+
+    span {
+      float: right;
+      color: $azul-100;
+    }
+  }
+}
+
+.menu-list-option {
+  div {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: solid 0px $gris-150;
+  }
+}
+
+.menu-lis-img {
+  img {
+    float: left;
+    height: 36px;
+    width: 36px;
+    border-radius: 36px;
+    margin: 0 8px;
+  }
+
+  div {
+    margin: 8px 0;
+  }
+}
+
+#main-header-info-app-perfil,
+#main-header-options-app,
+#container-img-perfils,
+#content-post-perfil-and-form,
+#content-candidate-and-tags {
+  @include prefixer(box-shadow, $sombra-gris-object);
+}
+
+.btn-sm-radius {
+  padding: 6px 26px;
+  border-radius: 16px;
+  font-size: 12px;
+  text-decoration: none !important;
+}
+
+
+
+// ======== Responsive for all GUI ====
+
+/**
+  Menú global
+**/
+#options-core {
+  @include transition(.3s ease);
+  @include desde-hasta(1200px, 1600px) {
+    width: 90% !important;
+  }
+
+  @include desde(1440px) {
+    width: 1420px !important;
+  }
+}
+
+/**
+  Contenedor del menú izquierdo
+  y contenedor derecho de información
+**/
+#container-ui {
+  @include transition(.3s ease);
+  @include desde-hasta(1200px, 1440px) {
+    width: 90%;
+  }
+
+  @include desde(1440px) {
+    width: 1420px;
+  }
+}
+
+/**
+  Menú izquierdo
+  Información del contacto, foto
+  y links para navegar
+**/
+#main {
+  width: 214px;
+  @include prefixer(height, calc(100% - 800px));
+  float: left;
+  @include box-sizing(border-box);
+  @include transition(.3s ease);
+}
+
+
+#content-body-ui {
+  width: 801px;
+  float: right;
+  @include prefixer(box-shadow, $sombra-gris-object);
+  @include box-sizing(border-box);
+  @include transition(.3s ease);
+
+  // content-body-ui
+  @include desde-hasta(1200px, 1600px) {
+    @include prefixer(width, calc(100% - 224px));
+  }
+
+  @include desde(1440px) {
+    @include prefixer(width, calc(100% - 224px));
+  }
+
+}
+
+
+// ==== Animaciones de entrada y salida de menú ====
+
+.hideShowContent {
+  width: 100% !important;
+}
+
+.decrementarAnimation {
+  transform-origin: top right;
+  transform: perspective(1000px) rotateY(-90deg);
+  animation-fill-mode: backwards;
+  width: 0 !important;
+}
+
+
+// ======== TAGS STYLE ======
+
+.nav-tabs {
+  li {
+    a {
+      border-top: solid 3px transparent;
+      border-radius: 0;
+      color: $black-core;
+      @include transition(.2s ease);
+
+      &:hover {
+        border-top: solid 3px $gris-290;
+        background-color: $gris-290;
+      }
+    }
+  }
+
+  .active {
+    a {
+      border-top: solid 3px $azul-200 !important;
+      border-radius: 0 !important;
+    }
+  }
+}
+
+
+.core-tags-container {
+  width: 100%;
+  height: 46px;
+  background-color: $black-core;
+  overflow: hidden;
+
+  .nav-tabs {
+    li {
+      a {
+        display: inline-block;
+        border: none !important;
+        border-top: solid 2px transparent !important;
+        border-right: solid 1px $gris-500 !important;
+        height: 46px;
+        width: auto;
+        text-decoration: none;
+        padding: 0 !important;
+        margin: 0 !important;
+        @include transition(.3s ease);
+
+        .companies-icon, .companies-desc {
+          display: inline-block;
+          color: $gris-100;
+          @include transition(.3s ease);
+        }
+
+        .companies-icon {
+          width: 32px;
+          height: 32px;
+          background-color: $gris-400;
+          border-radius: 32px;
+          margin: 9px;
+          margin-top: 5px;
+          margin-left: 10px;
+        }
+
+        .companies-desc {
+          margin-right: 22px;
+          @include prefixer(transform, translateY(-15px));
+        }
+
+        .companies-title {
+          font-weight: 300;
+        }
+
+        .companies-tittle-tag {
+          font-size: 10px;
+          font-weight: 600;
+        }
+
+        // HOVER CUANDO ES SELECCIONADO
+        &:hover {
+          background-color: $blanco;
+          border-top: solid 2px $azul-100 !important;
+          border-right: solid 1px $black-core !important;
+          div {
+            color: $black-core;
+          }
+
+          .companies-icon {
+            background-color: $gris-100 !important;
+          }
+        }
+      }
+    }
+
+    .active {
+      a {
+        background-color: $blanco;
+        border-top: solid 2px $azul-100 !important;
+        border-right: solid 1px $black-core !important;
+        div {
+          color: $black-core;
+        }
+
+        .companies-icon {
+          background-color: $gris-100 !important;
+        }
+      }
+    }
+  }
+}
+
+

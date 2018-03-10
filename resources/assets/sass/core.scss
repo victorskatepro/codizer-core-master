@@ -1,0 +1,54 @@
+// Variables
+@import "tema/varibles";
+
+// components
+@import "librerias/normalize";
+@import "librerias/ed-grid/ed-grid";
+
+
+// Core base theme
+@import "tema/core-body";
+@import "tema/core-search";
+@import "tema/core-apps";
+
+// Alerts and Modals
+@import "tema/alert";
+@import "tema/core-modal";
+@import "tema/core-loader";
+
+//Form style
+@import "base/form";
+@import "tema/inputs-list";
+@import "tema/inputs-new";
+@import "tema/input-validate";
+@import "tema/input-modal-statistic";
+
+// Perfil theme
+@import "tema/core-perfil";
+
+// Containers Left and Right theme
+@import "tema/core-container-left-right";
+
+// Show info
+@import "tema/core-show-info";
+
+// Notes
+@import "tema/core-note";
+
+// Contacts
+@import "tema/core-contacts";
+
+// Products
+@import "tema/core-products";
+
+// Companies
+@import "tema/core-companies";
+
+// Tiendas
+@import "tema/core-tienda";
+
+// Extra
+@import "tema/core-extra";
+
+// Employee
+@import "tema/core-employee";
